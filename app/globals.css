@@ -1,8 +1,8 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,7 +14,7 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +24,251 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.active {
+  text-decoration: none;
+}
+
+.active > span.text {
+  border-bottom: 2px solid #F84525;
+  color: #F84525;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.form-inputs{
+  position:relative;
+}
+/* .form-inputs .form-control{
+  height:45px; 
+} */
+
+.form-inputs .form-control:focus{
+  box-shadow:none;
+  /* border:1px solid #000; */
+}
+
+.form-inputs i.float-start{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.form-inputs i.float-end{
+  position: absolute;
+  right: 0;
+  top: 3px;
+}
+
+select.form-select:focus {
+  box-shadow: none;
+}
+
+input[type='radio'] {
+  border: 5px solid rgb(0 0 0 / 49%);
+  background-color: white;
+}
+
+input[type='radio']:checked {
+  background-color: #F84525;
+  border: 5px solid rgb(0 0 0 / 49%);
+  background-image: none;
+}
+
+input[type='radio']:focus {
+  border: 5px solid rgb(0 0 0 / 49%);
+  box-shadow: none;
+}
+
+.bigBtn {
+  width: 121px;
+  height: 121px;
+}
+
+.tiret::before{
+  display: inline-block;
+  content: "";
+  border-top: 0.18rem solid #F05201;
+  width: 1rem;
+  margin: -0.4rem 0.8rem;
+  transform: translateY(-1rem);
+}
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-outer::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font: normal normal normal 14px/1 FontAwesome;
+  color: #ccc;
+}
+
+.stars-inner::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font: normal normal normal 14px/1 FontAwesome;
+  color: #f8ce0b;
+}
+
+.date p:after {
+  content: ' \2022';
+}
+
+
+
+.col-auto-width div input{
+  width: 230px;
+  padding-right: 0px;
+}
+
+@media (min-width: 768px) {
+  .col-auto-width div input{
+    width: auto;
+    padding-right: 85px;
+  }
+}
+
+#scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+  height: 10px;
+}
+
+#scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(248, 69, 37);
+}
+
+.image {
+    position:relative;
+}
+
+.image:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.card-container:hover .card .image::after {
+    opacity:1;
+}
+
+.card-container:hover .card .image {
+  transform: scale(0.95);
+  transition: all 0.5s;
+}
+
+.card-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.card-container:hover .overlay {
+  opacity: 1;
+  z-index: 1;
+}
+
+.card-container .image i {
+  color: black;
+  font-size: 15px;
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* For large images */
+@media (min-width: 800px) {
+  .container-fluid.bg-image {
+    background-size: 100%;
+  }
+}
+
+/* For small images */
+@media (max-width: 799px) {
+  .container-fluid.bg-image {
+    background-size: auto;
+  }
+}
+
+.zoom{
+  margin-top: -25px !important;
+}
+
+@media (min-width: 768px) {
+  .zoom{
+    position: absolute;
+  }
+}
+
+.leaflet-control { z-index: 0 !important}
+.leaflet-pane { z-index: 0 !important}
+.leaflet-top, .leaflet-bottom {z-index: 0 !important}
+
+.leaflet-layer {
+  filter: invert(100%) hue-rotate(360deg) brightness(95%) contrast(90%);
+}
+
+.leaflet-control-attribution {
+  visibility: hidden;
+}
+
+.fa-check:before {
+  content: "\f00c";
+  font-size: 0.9rem;
+  padding: 1px;
+}
+
+.cheatsheet .category h3.category-heading {
+  margin-bottom: 0;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 3px 3px 0 0;
 }
