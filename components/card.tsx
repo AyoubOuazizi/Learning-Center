@@ -11,7 +11,7 @@ const Card = () => {
                     </div>
                     <div className="col">
                         <h6 className='my-1' style={{"fontSize":"12px","fontWeight":"700","color":"#293A51"}}>LM6E</h6>
-                        <div className="row g-2" style={{"color":"#6B7989","fontSize":"12.148px","fontWeight":"400"}}>
+                        <div className="row g-2" style={{"color":"#6B7989","fontSize":"11px","fontWeight":"400"}}>
                             <div className="col-auto date">
                                 <p>Feb 10, 2023</p>
                             </div>

@@ -14,7 +14,7 @@ const Nouveautes = () => {
                         <div className="inner-form row bg-white py-2 rounded" style={{"border":"1px solid #F84525","background":"#FFF","boxShadow":"0px 10px 26px 0px rgba(0, 0, 0, 0.10)"}}>
                             <div className="col-auto m-auto">
                                 <div className="d-flex form-inputs">
-                                    <input className="form-control border-0" style={{"width":"300px", "paddingLeft": "35px", "paddingRight": "30px" }} type="text" placeholder="Rechercher complet sur le portail" />
+                                    <input className="form-control border-0" style={{"width":"300px", "paddingLeft": "35px", "paddingRight": "30px", fontSize: 14 }} type="text" placeholder="Rechercher complet sur le portail" />
                                     <i className="fa fa-search text-black float-start"></i>
                                     <button className='border-0 bg-transparent text-white'>
                                         <i className="fa fa-exchange p-2 rounded-circle float-end" style={{ "rotate": "90deg", "background": "#F84525" }}></i>

@@ -23,12 +23,12 @@ export default function ResultsPage() {
     return (
         <>
             <div className="container-fluid bg-image text-white" style={{ "backgroundColor": "rgb(248 69 37 / 5%)", borderBottom: "1px solid rgba(248, 69, 37, 0.15)" }}>
-                <div className="container py-5">
-                    <form className="col col-md-8 mx-auto">
+                <div className="container-fluid py-5">
+                    <form className="col col-md-7 mx-auto">
                         <div className="inner-form row bg-white py-2 rounded" style={{ "border": "1px solid #F84525", "background": "#FFF", "boxShadow": "0px 10px 26px 0px rgba(0, 0, 0, 0.10)" }}>
                             <div className="col-auto m-auto">
                                 <div className="d-flex form-inputs">
-                                    <input className="form-control border-0" style={{ "width": "300px", "paddingLeft": "35px", "paddingRight": "30px" }} type="text" placeholder="Rechercher complet sur le portail" />
+                                    <input className="form-control border-0" style={{ "width": "300px", "paddingLeft": "35px", "paddingRight": "30px" }} type="text" placeholder="Rechercher sur le portail" />
                                     <i className="fa fa-search text-black float-start"></i>
                                     <button className='border-0 bg-transparent text-white'>
                                         <i className="fa fa-exchange p-2 rounded-circle float-end" style={{ "rotate": "90deg", "background": "#F84525" }}></i>
@@ -65,7 +65,7 @@ export default function ResultsPage() {
                             <ul className="list-group py-2" style={{ "fontSize": "15px", fontWeight: 500, display: hidden ? "none" : "" }}>
                                 {
                                     categories.map((cat) => {
-                                        return <li key={cat.categorie} className="list-group-item list-group-item-action border-0">
+                                        return <li key={cat.categorie} className="list-group-item list-group-item-action border-0" style={{cursor: "pointer"}}>
                                             <span className="float-start">{cat.categorie}</span>
                                             <span className="float-end" style={{ color: "#F84525" }}>{cat.count}</span>
                                         </li>
