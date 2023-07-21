@@ -45,19 +45,19 @@ function Navbar() {
                         </div>
                     </li> */}
                 </ul>
-                <form className="d-flex my-2 my-lg-0 justify-content-center align-items-center">
-                    <button className="btn btn-success my-2 my-sm-0 rounded-pill me-4 px-4 py-2" type="submit" style={{"border":"1px solid #F84525","background":"#F84525"}}>Se connnecter</button>
-                    <div className="dropdown text-dark">
-                        <button className=" btn my-2 my-sm-0 rounded-pill px-4 py-2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"  style={{"border":"1.5px solid #F84525","background":"rgba(248, 69, 37, 0.15)"}}>
+                <div className="d-flex my-2 my-lg-0 justify-content-center align-items-center">
+                    <button className="btn btn-success my-2 my-sm-0 rounded-pill me-4 px-4 py-2" type="submit" style={{fontWeight: 700, "border":"1px solid #E95D40","background":"#E95D40"}}>Se connnecter</button>
+                    <div className="dropdown text-dark" style={{fontWeight: 700}}>
+                        <button className=" btn my-2 my-sm-0 rounded-pill px-4 py-2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"  style={{fontWeight: 700,"border":"1.5px solid #E95D40","background":"rgba(233, 93, 64, 0.15)"}}>
                             <span className="flag-icon flag-icon-fr"> </span>  <i className="fa fa-chevron-down" style={{"fontSize": 13}}></i>  Langue
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a className="dropdown-item" href="#"><span className="flag-icon flag-icon-fr"> </span>  Français</a></li>
-                            <li><a className="dropdown-item" href="#"><span className="flag-icon flag-icon-us"> </span>  Anglais</a></li>
-                            <li><a className="dropdown-item" href="#"><span className="flag-icon flag-icon-ma"> </span>  Arabe</a></li>
+                            <li><a className="dropdown-item" href="#" style={{fontWeight: 700}}><span className="flag-icon flag-icon-fr"> </span>  Français</a></li>
+                            <li><a className="dropdown-item" href="#" style={{fontWeight: 700}}><span className="flag-icon flag-icon-us"> </span>  Anglais</a></li>
+                            <li><a className="dropdown-item" href="#" style={{fontWeight: 700}}><span className="flag-icon flag-icon-ma"> </span>  Arabe</a></li>
                         </ul>
                     </div>
-                </form>
+                </div>
             </div>
       </div>
     </nav>    

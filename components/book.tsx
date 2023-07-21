@@ -17,9 +17,9 @@ const Book = () => {
                         <div className="stars-inner" style={{ "width": rating }}></div>
                     </div>
                 </div>
-                <h6 className="card-title">Optimisation:Théorie et algorithmes</h6>
+                <h6 className="card-title" style={{fontWeight: 600}}>Optimisation:Théorie et algorithmes</h6>
                 <hr className='mb-1' />
-                <h6 className="card-text">Auteur : inconnu</h6>
+                <h6 className="card-text" style={{fontWeight: 600}}>Auteur : inconnu</h6>
             </div>
         </div>
     )

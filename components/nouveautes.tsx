@@ -11,13 +11,13 @@ const Nouveautes = () => {
                 </div>
                 <div className="col float-end">
                     <form className="col mx-auto float-end">
-                        <div className="inner-form row bg-white py-2 rounded" style={{"border":"1px solid #F84525","background":"#FFF","boxShadow":"0px 10px 26px 0px rgba(0, 0, 0, 0.10)"}}>
+                        <div className="inner-form row bg-white py-2 rounded" style={{"border":"1px solid #E95D40","background":"#FFF","boxShadow":"0px 10px 26px 0px rgba(0, 0, 0, 0.10)"}}>
                             <div className="col-auto m-auto">
                                 <div className="d-flex form-inputs">
                                     <input className="form-control border-0" style={{"width":"300px", "paddingLeft": "35px", "paddingRight": "30px", fontSize: 14 }} type="text" placeholder="Rechercher complet sur le portail" />
                                     <i className="fa fa-search text-black float-start"></i>
                                     <button className='border-0 bg-transparent text-white'>
-                                        <i className="fa fa-exchange p-2 rounded-circle float-end" style={{ "rotate": "90deg", "background": "#F84525" }}></i>
+                                        <i className="fa fa-exchange p-2 rounded-circle float-end" style={{ "rotate": "90deg", "background": "#E95D40" }}></i>
                                     </button>
                                 </div>
                             </div>
@@ -29,7 +29,7 @@ const Nouveautes = () => {
                                 </select>
                             </div>
                             <div className="col-auto m-auto m-md-0">
-                                <button className="btn btn-success rounded-pill px-4" type="submit" style={{ "height": "45px", "border": "1px solid #F84525", "background": "#F84525" }}><i className="fa fa-search"></i> Recherche</button>
+                                <button className="btn btn-success rounded-pill px-4" type="submit" style={{ fontWeight: 700,"height": "45px", "border": "1px solid #E95D40", "background": "#E95D40" }}><i className="fa fa-search"></i> Recherche</button>
                             </div>
                         </div>
                     </form>

@@ -2,12 +2,12 @@ import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Footer from '@/components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'flag-icon-css/css/flag-icons.min.css'
 import 'font-awesome/css/font-awesome.min.css'
 import ImportBsJS from './ImportBsJS'
 import { Montserrat } from 'next/font/google'
+import FooterV2 from '@/components/FooterV2'
  
 const montserrat = Montserrat({
   weight: '400',
@@ -32,7 +32,7 @@ export default function RootLayout({
       {/* <body className='App'> */}
         <Navbar/>
         {children}
-        <Footer/>
+        <FooterV2/>
         <ImportBsJS/>
       </body>
     </html>

@@ -1,9 +1,9 @@
 const Card = () => {
     return (
-        <div className="card p-3 mx-3 pb-0" style={{ "backgroundColor": "transparent","width":"255px"}}>
+        <div className="card-hover card p-3 mx-3 pb-0 bg-white border-0" style={{"width":"255px", cursor: "pointer"}}>
             <img src="https://www.agglo-moulins.fr/fileadmin/user_upload/mediatheque/images/mediatheque_moulins_salle_de_repos.jpg" className="card-img-top rounded" alt="..."/>
             <div className="card-body ps-0 text-start pb-0">
-                <div className="rounded-pill" style={{"width": "fit-content","padding":"2px 8px","fontSize":"0.85rem","fontWeight":"600","color":"#F84525","backgroundColor":"#FEDAD3"}}>Actualités</div>
+                <div className="rounded-pill" style={{"width": "fit-content","padding":"2px 8px","fontSize":"0.85rem","fontWeight":"600","color":"#E95D40","backgroundColor":"rgba(233, 93, 64, 0.20)"}}>Actualités</div>
                 <h6 className="card-title py-3" style={{"color":"rgb(41, 58, 81)","fontSize":"15px","fontWeight":"700","overflow":"hidden","display":"-webkit-box","WebkitLineClamp":"2","lineClamp":"2","WebkitBoxOrient":"vertical","maxHeight":"3.6em"}}>How Content Generators Work & How To Use Them to</h6>
                 <div className="row g-2 mt-3">
                     <div className="col-auto">

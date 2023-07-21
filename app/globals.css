@@ -36,8 +36,8 @@ body {
 }
 
 .active > span.text {
-  border-bottom: 2px solid #F84525;
-  color: #F84525;
+  border-bottom: 2px solid #E95D40;
+  color: #E95D40;
 }
 .dropdown-toggle::after {
   display: none !important;
@@ -77,7 +77,7 @@ input[type='radio'] {
 }
 
 input[type='radio']:checked {
-  background-color: #F84525;
+  background-color: #E95D40;
   border: 5px solid rgb(0 0 0 / 49%);
   background-image: none;
 }
@@ -95,10 +95,19 @@ input[type='radio']:focus {
 .tiret::before{
   display: inline-block;
   content: "";
-  border-top: 0.18rem solid #F05201;
+  border-top: 0.18rem solid #E95D40;
   width: 1rem;
   margin: -0.4rem 0.8rem;
   transform: translateY(-1rem);
+}
+
+.mini-tiret::before {
+    display: inline-block;
+    content: "";
+    border-top: 0.2rem solid #E95D40;
+    width: 0.7rem;
+    margin: -0.8rem 0.5rem -0.8rem 0.9rem;
+    transform: translateY(-1rem);
 }
 
 .stars-outer {
@@ -169,7 +178,7 @@ input[type='radio']:focus {
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: rgb(248, 69, 37);
+	background-color: #E95D40;
 }
 
 .image {
@@ -271,4 +280,9 @@ input[type='radio']:focus {
   padding: 10px;
   font-size: 20px;
   border-radius: 3px 3px 0 0;
+}
+
+.card-hover:hover {
+  border: 1px solid #E95D40 !important;
+  box-shadow: 0px 10px 26px 0px rgba(0, 0, 0, 0.10);
 }
