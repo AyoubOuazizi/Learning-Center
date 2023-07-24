@@ -9,7 +9,7 @@ const SearchSection = () => {
   const [data, setData] = useState({ cle: '' });
 
   return (
-    <div className="container-fluid bg-image text-white" style={{"backgroundRepeat": "no-repeat","backgroundPosition": "center","backgroundImage":"linear-gradient(180deg, rgba(0, 0, 0, 0.13) 4.00%, rgba(0, 0, 0, 0.41) 64.00%, rgba(0, 0, 0, 0.79) 100%),\n    url('/images/background.jpeg')","flexDirection":"column","justifyContent":"flex-end","alignItems":"center"}}>
+    <div className="container-fluid bg-image text-white" style={{backgroundSize: "cover", "backgroundRepeat": "no-repeat","backgroundPosition": "center","backgroundImage":"linear-gradient(180deg, rgba(0, 0, 0, 0.13) 4.00%, rgba(0, 0, 0, 0.41) 64.00%, rgba(0, 0, 0, 0.79) 100%),\n    url('/images/background.jpeg')","flexDirection":"column","justifyContent":"flex-end","alignItems":"center"}}>
       <div className="container py-5">
         <div className="col-md-6 mx-auto">
           <h1 style={{"marginTop": 120, fontWeight: 700}}>Learning Center</h1>
@@ -26,7 +26,7 @@ const SearchSection = () => {
                 </button>
               </div>
             </div>
-            <div className="col-auto-md col-12 d-flex flex-row justify-content-center align-items-center my-4 my-md-0" style={{width: "fit-content"}}>
+            <div className="col-auto-md col-12 d-flex flex-row justify-content-center align-items-center my-4 my-md-0 mx-auto" style={{width: "fit-content"}}>
               <img className='float-start' src="/images/search_type.svg" style={{"width":"23px"}}></img>
               <select defaultValue={"simple"} className="object-fit-contain float-end form-select border-0" aria-label="Default select example" style={{"width":"fit-content"}}>
                 <option value="simple">Recherche simple</option>

@@ -1,4 +1,5 @@
 import About from '@/components/About'
+import Faq from '@/components/Faq'
 import LoanForm from '@/components/LoanForm'
 import Database from '@/components/database'
 import LearningCenter from '@/components/learningCenter'
@@ -16,6 +17,7 @@ export default function Home() {
       <LoanForm/>
       <Nouveautes2/>
       {/* <Database/> */}
+      <Faq/>
     </main>
   )
 }

@@ -160,6 +160,26 @@ input[type='radio']:focus {
   }
 }
 
+.mini-tiret{
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .mini-tiret{
+    width: max-content;
+  }
+}
+
+#loanForm{
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  #loanForm{
+    height: 420px;
+  }
+}
+
 #scroll::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);

@@ -1,15 +1,15 @@
 export default function LoanForm() {
   return (
     <>
-        <div className="container-fluid pt-5 bg-image text-white" style={{height: 420, backgroundSize: "cover", "backgroundRepeat": "no-repeat","backgroundPosition": "center","backgroundImage":"linear-gradient(180deg, rgba(0, 0, 0, 0.13) 4.00%, rgba(0, 0, 0, 0.41) 64.00%, rgba(0, 0, 0, 0.79) 100%),\n    url('https://s3-alpha-sig.figma.com/img/fb05/ff2b/be313b2bb0a1b12ec55ea85e704c0615?Expires=1690761600&Signature=DhmO7Hhl73JPhJ-GCtQBtQgoZPkdATP~RxBK52VWHcv-YdJ1bYypvqASwICsr-bfJtgMgYeVpQ3CZSvItM1vOfLv0XGItLQU2YlRYYnKnNq04SsZJ2r48ANn-HykpS5mBdTPZaibkad76eoo-knVzf-BGbecCJJbblSMgOi6s~fnHED1OvgKjS8ns6CAqPCV1P4hRSsaT1P1XWuGumYsiV7qMdL0R0~foxV2mW8rp-9602XR3RHKBtvjqVCH~FYyif1hDvyu1lycqyMuj3oopAJ5H11xM15Rkeh5v4OM7yQTGkV5EtMB9-oPMA0s2zSgfh4RLj~QTpvhs9AaArq2Tw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')"}}>
+        <div id="loanForm" className="container-fluid pt-5 bg-image text-white" style={{backgroundSize: "cover", "backgroundRepeat": "no-repeat","backgroundPosition": "center","backgroundImage":"linear-gradient(180deg, rgba(0, 0, 0, 0.13) 4.00%, rgba(0, 0, 0, 0.41) 64.00%, rgba(0, 0, 0, 0.79) 100%),\n    url('https://s3-alpha-sig.figma.com/img/fb05/ff2b/be313b2bb0a1b12ec55ea85e704c0615?Expires=1690761600&Signature=DhmO7Hhl73JPhJ-GCtQBtQgoZPkdATP~RxBK52VWHcv-YdJ1bYypvqASwICsr-bfJtgMgYeVpQ3CZSvItM1vOfLv0XGItLQU2YlRYYnKnNq04SsZJ2r48ANn-HykpS5mBdTPZaibkad76eoo-knVzf-BGbecCJJbblSMgOi6s~fnHED1OvgKjS8ns6CAqPCV1P4hRSsaT1P1XWuGumYsiV7qMdL0R0~foxV2mW8rp-9602XR3RHKBtvjqVCH~FYyif1hDvyu1lycqyMuj3oopAJ5H11xM15Rkeh5v4OM7yQTGkV5EtMB9-oPMA0s2zSgfh4RLj~QTpvhs9AaArq2Tw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')"}}>
             <div className="row p-5 justify-content-between align-items-start g-2">
-                <div className="col col-md-5 text-start">
+                <div className="col-auto col-md-5 text-start">
                     <h5 className="py-3" style={{fontSize: 30, fontWeight: 700}}>Emprunter un document</h5>
                     <p style={{fontSize: 21}}>Pour toute information, veuillez nous contacter
     en utilisant ce formulaire.</p>
                     <p className="pt-2" style={{fontSize: 13, color: "rgba(255, 255, 255, 0.70)"}}>Il existe de nombreuses variantes de passages de lorem ipsum disponibles, mais la majorité ont subi une altération sous une forme ou une autre.</p>
                 </div>
-                <div className="col col-md-4">
+                <div className="col-auto col-md-4 mx-auto mx-md-0">
                     <div className="card text-white bg-white mb-5 mt-3 rounded float-md-end p-3 text-start w-100" style={{"width":"fit-content", "boxShadow": "0px 10px 26px 0px rgba(0, 0, 0, 0.10)"}}>
                         <div className="card-body text-black p-2 py-1" style={{"zIndex":"1","top":"0"}}>
                             <h5 className="mb-4 mt-2" style={{fontSize: 18, fontWeight: 700}}>Veuillez remplir le formulaire</h5>
