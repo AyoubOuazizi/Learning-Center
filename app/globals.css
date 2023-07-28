@@ -88,8 +88,8 @@ input[type='radio']:focus {
 }
 
 .bigBtn {
-  width: 121px;
-  height: 121px;
+  width: 80px;
+  height: 80px;
 }
 
 .tiret::before{
@@ -167,6 +167,18 @@ input[type='radio']:focus {
 @media (min-width: 768px) {
   .mini-tiret{
     width: max-content;
+  }
+}
+
+.rem-margin{
+  margin-right: -2.1rem;
+  margin-left: -2.1rem;
+}
+
+@media (min-width: 768px) {
+  .rem-margin{
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

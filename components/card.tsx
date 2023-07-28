@@ -1,6 +1,6 @@
 const Card = () => {
     return (
-        <div className="card-hover card p-3 mx-3 pb-0 bg-white border-0" style={{"width":"255px", cursor: "pointer"}}>
+        <div className="card-hover card p-3 mx-md-3 pb-0 bg-white border-0 mx-0" style={{"width":"255px", cursor: "pointer"}}>
             <img src="https://www.agglo-moulins.fr/fileadmin/user_upload/mediatheque/images/mediatheque_moulins_salle_de_repos.jpg" className="card-img-top rounded" alt="..."/>
             <div className="card-body ps-0 text-start pb-0">
                 <div className="rounded-pill" style={{"width": "fit-content","padding":"2px 8px","fontSize":"0.85rem","fontWeight":"600","color":"#E95D40","backgroundColor":"rgba(233, 93, 64, 0.20)"}}>Actualités</div>

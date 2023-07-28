@@ -37,7 +37,7 @@ const Nouveautes2 = () => {
                         </div>
                     </div>
                     <div className="col-auto">
-                        <button className="btn btn-success rounded-pill px-4" type="submit" style={{ "height": "45px", "border": "1px solid #E95D40", "background": "#E95D40" }}><i className="fa fa-search"></i> Recherche</button>
+                        <button className="btn btn-success rounded-pill px-4" type="submit" style={{ "height": "45px", "border": "1px solid #E95D40", "background": "#E95D40" }}><i className="fa fa-search"></i><span className='d-none d-md-inline'> Recherche</span></button>
                     </div>
                 </div>
             </form>
@@ -45,13 +45,13 @@ const Nouveautes2 = () => {
                 {cards()}
             </div>
             <div className="row justify-content-center align-items-center g-4 mt-2 pb-5">
-                <div className="col">
+                <div className="col-md col-auto">
                     <button className="btn my-2 my-sm-0 rounded-pill px-4 py-2 float-end" type="button" style={{"marginTop":20,"color":"#E95D40","border":"1.5px solid #E95D40","background":"rgba(233, 93, 64, 0.10)"}}>
                         <i className="fa fa-arrow-left" style={{"fontSize": 13}}></i> Précédent
                     </button>
                 </div>
-                <div className="col">
-                    <button className="btn btn-success my-2 my-sm-0 rounded-pill me-4 px-4 py-2 float-start" type="submit" style={{"border":"1px solid #E95D40","background":"#E95D40"}}>
+                <div className="col-md col-auto">
+                    <button className="btn btn-success my-2 my-sm-0 rounded-pill me-md-4 px-4 py-2 float-start me-0" type="submit" style={{"border":"1px solid #E95D40","background":"#E95D40"}}>
                         Suivant <i className="fa fa-arrow-right" style={{"fontSize": 13}}></i>
                     </button>
                 </div>

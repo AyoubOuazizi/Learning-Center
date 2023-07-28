@@ -5,12 +5,12 @@ const Nouveautes = () => {
 
     return (
         <div className="container-fluid" style={{"backgroundColor": "rgb(248 69 37 / 5%)"}}>
-            <div className="row g-2 p-5 pt-4">
-                <div className="col-auto text-start mx-md-5 mx-0">
+            <div className="row g-2 py-5 pt-4 px-3 px-md-5">
+                <div className="col-auto text-start mx-md-5 mx-0 px-5 px-md-0">
                     <h2 className='tiret mt-2' style={{ "marginLeft": "-43px", "color": "#292962", "fontWeight": "bold" }}>Nouveautés</h2>
                 </div>
-                <div className="col float-end">
-                    <form className="col mx-auto float-end">
+                <div className="col float-md-end ">
+                    <form className="col mx-auto float-sm-end">
                         <div className="inner-form row bg-white py-2 rounded" style={{"border":"1px solid #E95D40","background":"#FFF","boxShadow":"0px 10px 26px 0px rgba(0, 0, 0, 0.10)"}}>
                             <div className="col-auto m-auto">
                                 <div className="d-flex form-inputs">

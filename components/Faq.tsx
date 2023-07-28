@@ -9,14 +9,14 @@ export default function Faq() {
                 <br />
                 Trouvez vos réponses ici !"
             </h2>
-            <div className="container p-5">
+            <div className="container py-5 px-0 px-md-5">
                 <div className="row justify-content-center align-items-center g-2">
-                    <div className="col-6 align-self-start">
+                    <div className="col-md-6 col-12 align-self-start">
                         <FaqCard openVal={true}/>
                         <FaqCard/>
                         <FaqCard/>
                     </div>
-                    <div className="col-6 align-self-start">
+                    <div className="col-md-6 col-12 align-self-start">
                         <FaqCard/>
                         <FaqCard/>
                         <FaqCard/>
