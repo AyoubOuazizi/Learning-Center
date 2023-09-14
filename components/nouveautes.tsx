@@ -24,7 +24,7 @@ const Nouveautes = () => {
                             <div className="col d-flex flex-row justify-content-center align-items-center my-3 my-md-0">
                                 <img className='float-start' src="/images/search_type.svg" style={{ "width": "23px" }}></img>
                                 <select className="object-fit-contain float-end form-select border-0" aria-label="Default select example" style={{ "width": "fit-content" }}>
-                                    <option selected>Recherche simple</option>
+                                    <option defaultValue="true">Recherche simple</option>
                                     <option value="1">Recherche avancée</option>
                                 </select>
                             </div>

@@ -1,9 +1,9 @@
-export default function SearchRes() {
+export default function SearchRes({book}: {book: any}) {
     return (
         <>
             <div className="row">
                 <div className="col-4">
-                    <img src="/images/book1.png" className="img-fluid" alt="..." style={{ "boxShadow": "0px 7.075728893280029px 24.765050888061523px 0px rgba(0, 0, 0, 0.25)" }} />
+                    <img src={book.thumbnail_url} className="img-fluid" alt="..." style={{height: 200, width:130, "boxShadow": "0px 7.075728893280029px 24.765050888061523px 0px rgba(0, 0, 0, 0.25)" }} />
                 </div>
                 <div className="col-8" style={{ fontSize: 14 }}>
                     <table className="table table-borderless text-start" style={{ background: "#F9F9F9" }}>
@@ -11,42 +11,42 @@ export default function SearchRes() {
                             <tr>
                                 <th className="px-0 py-1" scope="row" style={{ "whiteSpace": "nowrap", background: "#F9F9F9" }}>Titre</th>
                                 <td className="py-1" style={{ background: "#F9F9F9" }}>:</td>
-                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>The magazine of the american library association</td>
+                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>{book.titre}</td>
                             </tr>
                             <tr>
                                 <th className="px-0 py-1" scope="row" style={{ "whiteSpace": "nowrap", background: "#F9F9F9" }}>Auteurs</th>
                                 <td className="py-1" style={{ background: "#F9F9F9" }}>:</td>
-                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>Laurie D. BORMAN, Editeur scientifique</td>
+                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>{book.responsability_author.map((element: any, index: number) => index!=book.responsability_author.length-1?`${element.author.author_name}, `:element.author.author_name)}</td>
                             </tr>
                             <tr>
                                 <th className="px-0 py-1" scope="row" style={{ "whiteSpace": "nowrap", background: "#F9F9F9" }}>Type de document</th>
                                 <td className="py-1" style={{ background: "#F9F9F9" }}>:</td>
-                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>Périodique : texte imprimé</td>
+                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>{book.typdoc}</td>
                             </tr>
                             <tr>
                                 <th className="px-0 py-1" scope="row" style={{ "whiteSpace": "nowrap", background: "#F9F9F9" }}>Editeur</th>
                                 <td className="py-1" style={{ background: "#F9F9F9" }}>:</td>
-                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>Booklist publications</td>
+                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>{book.publisher1?.name}</td>
                             </tr>
                             <tr>
                                 <th className="px-0 py-1" scope="row" style={{ "whiteSpace": "nowrap", background: "#F9F9F9" }}>ISBN/ISSN/EAN</th>
                                 <td className="py-1" style={{ background: "#F9F9F9" }}>:</td>
-                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>0002-9769Langues</td>
+                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>{book.isbn}</td>
                             </tr>
                             <tr>
                                 <th className="px-0 py-1" scope="row" style={{ "whiteSpace": "nowrap", background: "#F9F9F9" }}>Langues</th>
                                 <td className="py-1" style={{ background: "#F9F9F9" }}>:</td>
-                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>Anglais</td>
+                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>{book.languages.map((element: any, index: number) => index!=book.languages.length-1?`${element.code_langue}, `:element.code_langue)}</td>
                             </tr>
                             <tr>
                                 <th className="px-0 py-1" scope="row" style={{ "whiteSpace": "nowrap", background: "#F9F9F9" }}>Mots-clés</th>
                                 <td className="py-1" style={{ background: "#F9F9F9" }}>:</td>
-                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>Notification</td>
+                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>{book.key_words.map((element: any, index: number) => index!=book.key_words.length-1?`${element.replace(/;/g, ", ")} `:element.replace(/;/g, ", "))}</td>
                             </tr>
                             <tr>
                                 <th className="px-0 py-1" scope="row" style={{ "whiteSpace": "nowrap", background: "#F9F9F9" }}>Résumé</th>
                                 <td className="py-1" style={{ background: "#F9F9F9" }}>:</td>
-                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>The article reviews the books "Delivering the Best Start</td>
+                                <td className="px-0 py-1" style={{ background: "#F9F9F9" }}>{book.n_gen}</td>
                             </tr>
                         </tbody>
                     </table>

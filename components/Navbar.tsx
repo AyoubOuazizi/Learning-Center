@@ -29,10 +29,10 @@ function Navbar() {
                         <a className="nav-link" href="#"><span className='text'>Nos Bibliothèques</span></a>
                     </li>
                     <li className="nav-item mx-2">
-                        <Link className={(currentRoute === "/search") ? 'nav-link active' : "nav-link"} href="/search"><span className='text'>Recherche</span></Link>
+                        <a className={(currentRoute === "/search") ? 'nav-link active' : "nav-link"} href="/search" onClick={() => { window.location.reload(); }}><span className='text'>Recherche</span></a>
                     </li>
                     <li className="nav-item mx-2">
-                        <a className="nav-link" href="#"><span className='text'>Nouveautés</span></a>
+                        <a className="nav-link" href="/#nouveautes"><span className='text'>Nouveautés</span></a>
                     </li>
                     <li className="nav-item mx-2">
                         <Link className={(currentRoute === "/contact-us") ? 'nav-link active' : "nav-link"} href="/contact-us"><span className='text'>Contact</span></Link>
