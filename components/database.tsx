@@ -3,7 +3,7 @@ const Database = () => {
     <div className="container-fluid pt-5 pb-5" style={{"backgroundColor": "rgb(248 69 37 / 5%)"}}>
             <h6 className='text-uppercase' style={{ "color": "#F05201" }}>Base de Données</h6>
             <h2 className='mt-3 mb-5' style={{ "color": "#292962", "fontWeight": "bold" }}>
-                "Bases de donnés"
+            &quot;Bases de donnés&quot;
             </h2>
             <div className="row justify-content-center align-items-center g-2 mx-5 pb-3">
                 <div className="col">

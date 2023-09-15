@@ -49,7 +49,7 @@ const Contact = () => {
                 <div className="container py-5">
                     <div className="col-md-6 mx-auto">
                         <h1 style={{ "marginTop": 120 }}>CONTACTEZ NOUS</h1>
-                        <p className="my-5">Nous sommes là pour vous aider. Si vous avez des questions ou des préoccupations, n'hésitez pas à nous contacter en utilisant l'une des méthodes</p>
+                        <p className="my-5">Nous sommes là pour vous aider. Si vous avez des questions ou des préoccupations, n&apos;hésitez pas à nous contacter en utilisant l&apos;une des méthodes</p>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@ const Contact = () => {
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
                         <Marker position={[32.207153925527, -7.937789475880331]} icon={ markerIcon }>
                             <Popup>
-                                Lycée Mohammed VI <br/> d'Excellence
+                                Lycée Mohammed VI <br/> d&apos;Excellence
                             </Popup>
                         </Marker>
                     </MapContainer>

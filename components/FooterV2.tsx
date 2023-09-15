@@ -25,7 +25,7 @@ const FooterV2 = () => {
                     <h6 className="pb-1 mb-4 mx-auto mx-md-0" style={{borderBottom: "2px solid #E95D40", width: "fit-content"}}>Service</h6>
                     <p style={{fontSize: 13, color: "rgba(255, 255, 255, 0.70)"}}>Acquérir</p>
                     <p style={{fontSize: 13, color: "rgba(255, 255, 255, 0.70)"}}>Rassembler</p>
-                    <p style={{fontSize: 13, color: "rgba(255, 255, 255, 0.70)"}}>Organiser l'information</p>
+                    <p style={{fontSize: 13, color: "rgba(255, 255, 255, 0.70)"}}>Organiser l&apos;information</p>
                 </div>
                 <div className="col-12 col-md-2 text-md-start pt-3">
                     <h6 className="pb-1 mb-4 mx-auto mx-md-0" style={{borderBottom: "2px solid #E95D40", width: "fit-content"}}>Contact</h6>

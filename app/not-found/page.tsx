@@ -6,7 +6,7 @@ export default function NotFound() {
             <div className="container py-5 text-center">
                 <div className="col-md-6 mx-auto">
                     <img src="/images/notfound.png" className="img-fluid rounded-top" alt="" style={{ "width": 400 }}/>
-                    <p className="mb-5 mt-2">Nous sommes désolés, la page que vous avez demandée est introuvable.<br/>Veuillez retourner à la page d'accueil.</p>
+                    <p className="mb-5 mt-2">Nous sommes désolés, la page que vous avez demandée est introuvable.<br/>Veuillez retourner à la page d&apos;accueil.</p>
                     <Link className="nav-link" href="/"><button className="btn btn-success rounded-pill px-4" type="submit" style={{"height":"45px","border":"1px solid #F84525","background":"#F84525"}}><i className="fa fa-home"></i> Accueil</button></Link>
                 </div>
             </div>
