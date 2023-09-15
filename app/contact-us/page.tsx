@@ -6,30 +6,30 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 const Contact = () => {
-    const mapRef = useRef(null);
-    const zoomIn = useRef(null);
-    let zoom = 13;
+    // const mapRef = useRef(null);
+    // const zoomIn = useRef(null);
+    // let zoom = 13;
 
-    const markerIcon = new L.Icon({
-        iconUrl: "images/marker.svg",
-        iconRetinaUrl: "images/marker.svg",
-        popupAnchor:  [-0, -0],
-        iconSize: [32,45],     
-    });
+    // const markerIcon = new L.Icon({
+    //     iconUrl: "images/marker.svg",
+    //     iconRetinaUrl: "images/marker.svg",
+    //     popupAnchor:  [-0, -0],
+    //     iconSize: [32,45],     
+    // });
 
-    const handleZoomClick = () => {
-        if(zoom==18){
-          let zm: HTMLInputElement = zoomIn.current!
-          zm.disabled = true;
-        }
-        else {
-          let zm: HTMLInputElement = zoomIn.current!
-          zm.disabled = false;
-        }
-        let mapCurrent: {setZoom: (number: number)=> void} = mapRef.current!
-        mapCurrent.setZoom(zoom);
-        console.log(zoom)
-    };
+    // const handleZoomClick = () => {
+    //     if(zoom==18){
+    //       let zm: HTMLInputElement = zoomIn.current!
+    //       zm.disabled = true;
+    //     }
+    //     else {
+    //       let zm: HTMLInputElement = zoomIn.current!
+    //       zm.disabled = false;
+    //     }
+    //     let mapCurrent: {setZoom: (number: number)=> void} = mapRef.current!
+    //     mapCurrent.setZoom(zoom);
+    //     console.log(zoom)
+    // };
 
     useEffect(() => {
         // fetch('https://jsonplaceholder.typicode.com/posts')
@@ -55,23 +55,23 @@ const Contact = () => {
             </div>
             <div className="container-fluid px-0 position-relative" style={{"zIndex":"0","margin": "-2px 0"}}>
                 <div className="img-fluid">
-                    <MapContainer center={[32.207153925527, -7.937789475880331]} zoom={zoom} zoomControl={false} dragging={false} scrollWheelZoom={false} style={{ height: '800px', width: '100%' }} ref={mapRef}>
+                    {/* <MapContainer center={[32.207153925527, -7.937789475880331]} zoom={zoom} zoomControl={false} dragging={false} scrollWheelZoom={false} style={{ height: '800px', width: '100%' }} ref={mapRef}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
                         <Marker position={[32.207153925527, -7.937789475880331]} icon={ markerIcon }>
                             <Popup>
                                 Lycée Mohammed VI <br/> d&apos;Excellence
                             </Popup>
                         </Marker>
-                    </MapContainer>
+                    </MapContainer> */}
                 </div>
 
                 <div className="row w-100 mx-0 mb-0 mt-md-0 pb-5 pt-md-4 zoom" style={{"zIndex":"1","top":"0"}}>
                     <div className='d-flex justify-content-center align-items-center'>
                         <div className="card text-white bg-white mb-5 mt-3 rounded-pill" style={{"width":"fit-content"}}>
                             <div className="card-body text-black p-2 ps-3 py-1">
-                                <button className="btn btn-success my-2 my-sm-0 rounded-circle mx-2 p-1" type="button" style={{"width": 35,"height": 35,"border":"1px solid #F84525","background":"#F84525"}} onClick={()=>{zoom++; handleZoomClick()}} ref={zoomIn}>+</button>
+                                {/* <button className="btn btn-success my-2 my-sm-0 rounded-circle mx-2 p-1" type="button" style={{"width": 35,"height": 35,"border":"1px solid #F84525","background":"#F84525"}} onClick={()=>{zoom++; handleZoomClick()}} ref={zoomIn}>+</button>
                                 <button className="btn btn-success my-2 my-sm-0 rounded-circle mx-2 p-1" type="button" style={{"width": 35,"height": 35,"border":"1px solid #F84525","background":"#F84525"}} onClick={()=>{zoom--; handleZoomClick()}}>-</button>
-                                <button className="btn btn-success my-2 my-sm-0 rounded-pill me-0 ms-5 px-4 py-2" type="button" style={{"border":"1px solid #F84525","background":"#F84525"}} onClick={()=>{zoom=18; handleZoomClick()}}>Zoom</button>
+                                <button className="btn btn-success my-2 my-sm-0 rounded-pill me-0 ms-5 px-4 py-2" type="button" style={{"border":"1px solid #F84525","background":"#F84525"}} onClick={()=>{zoom=18; handleZoomClick()}}>Zoom</button> */}
                             </div>
                         </div>
                     </div>
